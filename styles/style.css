@@ -1,0 +1,10 @@
+@import 'global.css';
+@import 'utilities.css';
+@import 'header.css';
+@import 'content-section-choose-your-tour.css';
+@import 'content-section-create-tour.css';
+@import 'content-section-reviews.css';
+@import 'content-section-travel-photo.css';
+@import 'content-section-travel-stories.css';
+@import 'content-section-get-details.css';
+@import 'footer.css';

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <symbol id="dropdown">
+    <path d="m13 19.414-8.707-8.707a1 1 0 0 1 1.414-1.414L13 16.586l7.293-7.293a1 1 0 1 1 1.414 1.414L13 19.414Z" clip-rule="evenodd"/>
+  </symbol>
+</svg>

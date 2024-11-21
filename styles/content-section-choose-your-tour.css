@@ -1,0 +1,207 @@
+.content-section-choose-your-tour {
+  margin-inline: 21px;
+  padding-block: 76px;
+}
+
+.content-section-choose-your-tour__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content-section-choose-your-tour__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-inline: 30px;
+}
+
+.content-section-choose-your-tour__item {
+  color: #1B1F2B;
+  font-weight: 700;
+  line-height: 142%;
+}
+
+.content-section-choose-your-tour__item:nth-child(1) {
+  justify-self: end;
+  color: #EFA501;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.content-section-choose-your-tour__item:nth-child(4) {
+  margin-inline-start: 40px;
+}
+
+.content-section-choose-your-tour__pricelist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-block-start: 49px;
+}
+
+.img-car {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/b69d20a62bd4fd7d64689bae644e4d4c.png');
+}
+
+.img-desert {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/a698e1127fbad07e5364993900c5306d.png');
+}
+
+.img-mountains {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/933d5ad619ec2d96657eb34d61796802.png');
+}
+
+.img-street {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/c19519d1723c94ff1c2ce6d990e62997.png');
+}
+
+.img-beach {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/2c81431d2b0a791abf807db0da9ae82b.png');
+}
+
+.img-pier {
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), 
+  url('../images/photo/ae109f1f6a04de08e8fe0192acfd2a7c.png');
+}
+
+.content-section-choose-your-tour__pricelist-item {
+  position: relative;
+  width: 318px;
+  height: 318px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content-section-choose-your-tour__pricelist-item-text {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #FFFFFF;
+}
+
+.content-section-choose-your-tour__pricelist-item-price {
+  line-height: 142%;
+  letter-spacing: -0.01em;
+}
+
+.choose-your-tour__button-with-arrow_position {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+@media (width >= 470px) {
+  .content-section-choose-your-tour__item:nth-child(4) {
+    margin-inline-start: 0;
+  }
+
+  .content-section-choose-your-tour__list {
+    gap: 30px;
+  }
+}
+
+@media (width >= 1024px) {
+  .content-section-choose-your-tour {
+    padding-block: 135px;
+  }
+
+  .content-section-choose-your-tour__container {
+    gap: 35px;
+  }
+
+  .content-section-choose-your-tour__item:hover {
+    color: #1B1F2B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+    cursor: pointer;
+  }
+
+  .content-section-choose-your-tour__list {
+    margin-inline-start: 142px;
+  }
+
+  .content-section-choose-your-tour__item {
+    font-size: 23px;
+    line-height: 122%;
+  }
+
+  .content-section-choose-your-tour__item:nth-child(1) {
+    text-underline-offset: 9px;
+  }
+
+  .content-section-choose-your-tour__pricelist {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block-start: 106px;
+  }
+
+  .content-section-choose-your-tour__pricelist-item {
+    width: 450px;
+    height: 531px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .content-section-choose-your-tour__pricelist-item:hover .content-section__background-image_features {
+    transform: scale(1.2);
+  }
+
+  .content-section-choose-your-tour__pricelist-item:hover .button-with-arrow::before {
+    background-color: #286562;
+  }
+    
+  .content-section-choose-your-tour__pricelist-item:active .button-with-arrow::before {
+    background-color: #EFA501;
+  }
+
+  .content-section-choose-your-tour__pricelist-item-text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    gap: 16px;
+  }
+
+  .choose-your-tour__button-with-arrow_position {
+    bottom: 50px;
+    left: 50px;
+  }
+
+  .content-section-choose-your-tour__pricelist-item-price {
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (width >= 1920px) {
+  .content-section-choose-your-tour {
+    margin-inline: 375px;
+  }
+
+  .content-section-choose-your-tour__list {
+    margin-inline-start: 236px;
+  }
+
+  .content-section-choose-your-tour__pricelist {
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .content-section-choose-your-tour__pricelist-item {
+    width: 370px;
+    height: 531px;
+  }
+}
