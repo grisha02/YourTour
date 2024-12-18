@@ -18,24 +18,32 @@
     <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__menu">
-        <svg class="responsive-logo" viewBox="0 0 182 32">
-          <use href="./images/svg/logo.svg#logo"></use>
-        </svg>
+        <a href="#header">
+          <svg class="responsive-logo" viewBox="0 0 182 32">
+            <use href="./images/svg/logo.svg#logo"></use>
+          </svg>
+        </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="#tours" class="header__nav-link">Туры</a>
+              <a href="#tours" class="header__nav-link text-underline">Туры</a>
             </li>
             <li class="header__nav-item">
-              <a href="#create-tour" class="header__nav-link">Создать тур</a>
+              <a href="#create-tour" class="header__nav-link text-underline"
+                >Создать тур</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="#reviews" class="header__nav-link">Отзывы</a>
+              <a href="#reviews" class="header__nav-link text-underline"
+                >Отзывы</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="#stories" class="header__nav-link">Истории</a>
+              <a href="#stories" class="header__nav-link text-underline"
+                >Истории</a
+              >
             </li>
           </ul>
         </nav>
@@ -56,10 +64,26 @@
           <h2 class="content-section__title--h2">Выбери свой тур</h2>
           <ul class="content-section-choose-your-tour__list">
             <li class="content-section-choose-your-tour__item">Популярные</li>
-            <li class="content-section-choose-your-tour__item">Авторские</li>
-            <li class="content-section-choose-your-tour__item">Походы</li>
-            <li class="content-section-choose-your-tour__item">Сплавы</li>
-            <li class="content-section-choose-your-tour__item">Велопрогулки</li>
+            <li
+              class="content-section-choose-your-tour__item text-underline text-underline--thick"
+            >
+              Авторские
+            </li>
+            <li
+              class="content-section-choose-your-tour__item text-underline text-underline--thick"
+            >
+              Походы
+            </li>
+            <li
+              class="content-section-choose-your-tour__item text-underline text-underline--thick"
+            >
+              Сплавы
+            </li>
+            <li
+              class="content-section-choose-your-tour__item text-underline text-underline--thick"
+            >
+              Велопрогулки
+            </li>
           </ul>
         </div>
         <ul class="content-section-choose-your-tour__pricelist">
@@ -237,26 +261,30 @@
         </div>
         <form class="content-section-create-tour__form">
           <div class="content-section-create-tour__form-item">
-            <label for="name">Имя</label>
+            <span id="name-label">Имя</span>
             <input
               class="content-section-create-tour__form-item-input"
               type="text"
               id="name"
               name="name"
               placeholder="Введите Ваше имя"
+              aria-labelledby="name-label"
               required
             />
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="direction">Направление</label>
+            <span id="direction-label">Направление</span>
             <div class="custom-select-wrapper">
               <select
                 class="content-section-create-tour__form-item-input"
                 id="direction"
                 name="direction"
                 required
+                aria-labelledby="direction-label"
               >
-                <option value="" disabled selected>Куда хотите ехать</option>
+                <option value="" disabled selected hidden>
+                  Куда хотите ехать
+                </option>
                 <option value="Горы">Горы</option>
                 <option value="Море">Море</option>
                 <option value="Пустыня">Пустыня</option>
@@ -267,59 +295,61 @@
             </div>
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="email">Email</label>
+            <span id="email-label">Email</span>
             <input
               class="content-section-create-tour__form-item-input"
-              type="email"
+              type="text"
               id="email"
               name="email"
               placeholder="example@mail.com"
               required
+              aria-labelledby="email-label"
             />
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="phone">Телефон</label>
+            <span id="phone-label">Телефон</span>
             <input
               class="content-section-create-tour__form-item-input"
               type="tel"
               id="phone"
               name="phone"
               placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
-              pattern="^\+7\d{10}$"
               required
-              title="Введите номер в формате +7XXXXXXXXXX"
+              title="Введите номер в формате + 7(999)999-99-99"
+              aria-labelledby="phone-label"
             />
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="date-from">Дата от</label>
+            <span id="date-from-label">Дата от</span>
             <input
               class="content-section-create-tour__form-item-input"
               type="text"
               id="date-from"
               name="date-from"
               placeholder="ДД.ММ.ГГГГ"
-              pattern="\d{2}\.\d{2}\.\d{4}"
               required
+              aria-labelledby="date-from-label"
             />
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="date-to">Дата до</label>
+            <span id="date-to-label">Дата до</span>
             <input
               class="content-section-create-tour__form-item-input"
               type="text"
               id="date-to"
               name="date-to"
               placeholder="ДД.ММ.ГГГГ"
-              pattern="\d{2}\.\d{2}\.\d{4}"
               required
+              aria-labelledby="date-to-label"
             />
           </div>
           <div class="content-section-create-tour__form-item">
-            <label for="comment">Комментарий</label>
+            <span id="comment-label">Комментарий</span>
             <textarea
               class="content-section-create-tour__form-item-input content-section-create-tour__form-item-textarea"
               id="comment"
               name="comment"
+              aria-labelledby="comment-label"
             ></textarea>
           </div>
           <div class="content-section-create-tour__form-item">
@@ -373,6 +403,11 @@
                 class="custom-checkbox"
                 required
               />
+              <span class="custom-checkbox-icon">
+                <svg viewBox="0 0 13 10" width="10" height="7">
+                  <use href="./images/svg/check.svg#checkSVG"></use>
+                </svg>
+              </span>
               <span class="content-section-create-tour__form-item-text">
                 <span class="content-section-create-tour__form-item-custom-text"
                   >Нажимая кнопку, я принимаю условия</span
@@ -614,17 +649,17 @@
               class="content-section-travel-stories__list-item-container-social"
             >
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">instagram</a>
               </li>
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">facebook</a>
               </li>
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">YouTube</a>
               </li>
@@ -666,12 +701,12 @@
               class="content-section-travel-stories__list-item-container-social"
             >
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">instagram</a>
               </li>
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">ВКонтакте</a>
               </li>
@@ -713,17 +748,17 @@
               class="content-section-travel-stories__list-item-container-social"
             >
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">instagram</a>
               </li>
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">facebook</a>
               </li>
               <li
-                class="content-section-travel-stories__list-item-container-social-item"
+                class="content-section-travel-stories__list-item-container-social-item text-underline"
               >
                 <a href="#">ВКонтакте</a>
               </li>
@@ -741,7 +776,9 @@
             class="content-section-subtitle content-section-get-details__text-features"
           >
             Напиши на почту и узнай подробности на
-            <a href="" class="content-section-get-details__container-email"
+            <a
+              href="mailto:yourtour@gmail.com"
+              class="content-section-get-details__container-email"
               >yourtour@gmail.com</a
             >
           </p>
@@ -752,26 +789,42 @@
       <p class="footer__title">Наши социальные сети</p>
       <ul class="footer__list">
         <li class="footer__list-item">
-          <svg viewBox="0 0 23 23" width="22" height="22">
-            <use href="./images/svg/inst.svg#instSVG"></use>
-          </svg>
-          <a href="#" class="footer__list-item-text">instagram</a>
+          <a href="#" class="footer__list-item-social">
+            <svg viewBox="0 0 23 23" width="22" height="22">
+              <use href="./images/svg/inst.svg#instSVG"></use>
+            </svg>
+            <p class="footer__list-item-text text-underline">instagram</p>
+          </a>
         </li>
         <li class="footer__list-item">
-          <svg viewBox="0 0 22 22" width="21" height="21">
-            <use href="./images/svg/fb.svg#fbSVG"></use>
-          </svg>
-          <a href="#" class="footer__list-item-text">facebook</a>
+          <a href="#" class="footer__list-item-social">
+            <svg viewBox="0 0 22 22" width="21" height="21">
+              <use href="./images/svg/fb.svg#fbSVG"></use>
+            </svg>
+            <p class="footer__list-item-text text-underline">facebook</p>
+          </a>
         </li>
         <li class="footer__list-item">
-          <svg viewBox="0 0 21 21" width="21" height="21">
-            <use href="./images/svg/vk.svg#vkSVG"></use>
-          </svg>
-          <a href="#" class="footer__list-item-text">vkontakte</a>
+          <a href="#" class="footer__list-item-social">
+            <svg viewBox="0 0 21 21" width="21" height="21">
+              <use href="./images/svg/vk.svg#vkSVG"></use>
+            </svg>
+            <p class="footer__list-item-text text-underline">vkontakte</p>
+          </a>
         </li>
       </ul>
     </footer>
-    <script src="./scripts/sticky-header.js"></script>
-    <script src="./scripts/selectedElement.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

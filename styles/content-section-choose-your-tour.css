@@ -1,6 +1,6 @@
 .content-section-choose-your-tour {
   margin-inline: 21px;
-  padding-block: 76px;
+  padding-block-end: 76px;
 }
 
 .content-section-choose-your-tour__container {
@@ -107,13 +107,14 @@
   }
 
   .content-section-choose-your-tour__list {
+    justify-content: center;
     gap: 30px;
   }
 }
 
 @media (width >= 1024px) {
   .content-section-choose-your-tour {
-    padding-block: 135px;
+    padding-block-end: 135px;
   }
 
   .content-section-choose-your-tour__container {
@@ -122,19 +123,17 @@
 
   .content-section-choose-your-tour__item:hover {
     color: #1B1F2B;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 9px;
     cursor: pointer;
   }
 
-  .content-section-choose-your-tour__list {
-    margin-inline-start: 142px;
+  .content-section-choose-your-tour__item:active {
+    cursor: default;
   }
 
   .content-section-choose-your-tour__item {
     font-size: 23px;
     line-height: 122%;
+    transition: 0.3s ease;
   }
 
   .content-section-choose-your-tour__item:nth-child(1) {
@@ -146,6 +145,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-block-start: 106px;
+    max-inline-size: 1800px;
   }
 
   .content-section-choose-your-tour__pricelist-item {
@@ -189,10 +189,6 @@
 @media (width >= 1920px) {
   .content-section-choose-your-tour {
     margin-inline: 375px;
-  }
-
-  .content-section-choose-your-tour__list {
-    margin-inline-start: 236px;
   }
 
   .content-section-choose-your-tour__pricelist {

@@ -98,6 +98,7 @@
     width: calc(100% + 40px);
     height: calc(100% + 14px);
     border-radius: 50px;
+    transition: background-color 0.3s ease;
     transform: translate(-50%, -48%);
   }
 
@@ -106,6 +107,36 @@
     line-height: 122%;
     inline-size: 120px;
     block-size: 28px;
+  }
+
+  .button-details:hover {
+    cursor: pointer;
+  }
+
+  .text-underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .text-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: currentColor;
+    transition: 0.3s ease;
+  }
+
+  .text-underline--thick::after {
+    bottom: -5px;
+    height: 3px;
+  }
+
+  .text-underline:hover::after {
+    width: 101%;
   }
 }
 

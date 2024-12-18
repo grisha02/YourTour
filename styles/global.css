@@ -47,3 +47,16 @@ a {
   line-height: inherit;
   text-decoration: none;
 }
+
+::placeholder
+{
+  color: #A6A6A6;
+}
+
+::-webkit-input-placeholder {
+  color: #A6A6A6;
+}
+
+:-ms-input-placeholder {
+  color: #A6A6A6;
+}

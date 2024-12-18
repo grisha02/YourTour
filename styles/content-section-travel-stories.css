@@ -149,11 +149,6 @@
     background-color: #EFA501;
   }
 
-  .content-section-travel-stories__list-item-container-social-item:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
-
   .content-section-travel-stories__list-item-container-social-item:active {
     color: #EFA501;
   }
