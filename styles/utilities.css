@@ -132,11 +132,15 @@
 
   .text-underline--thick::after {
     bottom: -5px;
-    height: 3px;
+    height: 2px;
   }
 
   .text-underline:hover::after {
     width: 101%;
+  }
+
+  .text-underline--color:active {
+    color: #286562;
   }
 }
 

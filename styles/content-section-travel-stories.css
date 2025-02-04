@@ -144,13 +144,14 @@
   .content-section-travel-stories__list-item:hover .button-with-arrow::before {
     background-color: #286562;
   }
-    
-  .content-section-travel-stories__list-item:active .button-with-arrow::before {
-    background-color: #EFA501;
-  }
 
   .content-section-travel-stories__list-item-container-social-item:active {
     color: #EFA501;
+  }
+
+  .content-section-travel-stories__list-item:active:not(:has(.content-section-travel-stories__list-item-container-social-item:active)) 
+  .button-with-arrow::before {
+    background-color: #EFA501;
   }
 }
 

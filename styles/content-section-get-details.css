@@ -71,11 +71,7 @@
   }
 
   .content-section-get-details__container-email:hover {
-    text-decoration: underline;
     cursor: pointer;
-  }
-
-  .content-section-get-details__container-email:active {
     color: #286562;
   }
 }

@@ -126,6 +126,10 @@
     cursor: pointer;
   }
 
+  .content-section-choose-your-tour__item:nth-child(1) {
+    color: #EFA501;
+  }
+
   .content-section-choose-your-tour__item:active {
     cursor: default;
   }
@@ -192,8 +196,11 @@
   }
 
   .content-section-choose-your-tour__pricelist {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 30px;
+    justify-self: center;
   }
 
   .content-section-choose-your-tour__pricelist-item {

@@ -47,7 +47,7 @@
   block-size: 26px;
 }
 
-.content-section-create-tour__form-item-input:invalid {
+#direction:invalid {
   color: #A6A6A6; 
 }
 
@@ -124,7 +124,11 @@
 }
 
 .custom-checkbox {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .custom-checkbox-icon {

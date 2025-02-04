@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-section-reviews__container-item {
@@ -25,6 +27,7 @@
   padding-inline-end: 21px;
   padding-block: 20px;
   background-color: #F4F0E9;
+  max-inline-size: 318px;
 }
 
 .content-section-reviews__container-item-info {
@@ -91,7 +94,7 @@
     padding-inline: 40px;
     padding-block-start: 39px;
     padding-block-end: 40px;
-    min-inline-size: 450px;
+    max-inline-size: 450px;
     block-size: 841px;
   }
 
