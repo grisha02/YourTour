@@ -5,6 +5,17 @@ export const initializeForm = () => {
   const dateToInput = document.querySelector("#date-to");
   const emailInput = document.querySelector("#email");
   const nameInput = document.querySelector("#name");
+  const select = document.querySelector("#direction");
+
+  function updateOptionColors() {
+    const options = select.options;
+    for (let i = 1; i < options.length; i++) {
+      options[i].style.color = "#1B1F2B";
+    }
+  }
+
+  updateOptionColors();
+  select.addEventListener("change", updateOptionColors);
 
   const isLeapYear = (year) => (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 
