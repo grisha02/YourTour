@@ -27,7 +27,8 @@
   padding-inline-end: 21px;
   padding-block: 20px;
   background-color: #F4F0E9;
-  max-inline-size: 318px;
+  /* max-inline-size: 318px; */
+  min-inline-size: 318px;
 }
 
 .content-section-reviews__container-item-info {
@@ -72,15 +73,10 @@
   block-size: 75px;
 }
 
-@media (width >= 1024px) {
+@media (width >= 768px) {
   .content-section-reviews {
     margin-inline: 53px;
-    margin-block-end: 135px;
-  }
-
-  .content-section-reviews__header {
-    gap: 30px;
-    margin-block-end: 100px;
+    /* margin-block-end: 135px; */
   }
 
   .content-section-reviews__container {
@@ -94,8 +90,50 @@
     padding-inline: 40px;
     padding-block-start: 39px;
     padding-block-end: 40px;
-    max-inline-size: 450px;
-    block-size: 841px;
+    /* max-inline-size: 450px; */
+    inline-size: 450px;
+    /* block-size: 700px; */
+    block-size: clamp(700px, 700px + (141 * (100vw - 768px) / 256), 841px);
+  }
+
+  .content-section-reviews__container-item-text {
+    /* font-size: 23px; */
+    font-size: clamp(16px, 16px + (7 * (100vw - 768px) / 256), 23px);
+    /* line-height: 28px; */
+  }
+}
+
+@media (width >= 1024px) {
+  .content-section-reviews {
+    /* margin-inline: 53px; */
+    margin-block-end: 135px;
+  }
+
+  .content-section-reviews__header {
+    gap: 30px;
+    margin-block-end: 100px;
+  }
+
+  .content-section-reviews__container {
+    /* flex-direction: row; */
+    max-inline-size: 1170px;
+    margin: auto;
+    /* place-items: center; */
+    /* text-align: center; */
+  }
+
+  .content-section-reviews__container-item {
+    /* justify-content: space-between;
+    gap: normal;
+    border-radius: 50px;
+    padding-inline: 40px;
+    padding-block-start: 39px;
+    padding-block-end: 40px;
+    max-inline-size: 450px; */
+    /* block-size: 841px; */
+    /* inline-size: clamp(450px, 450px + (120 * (100vw - 1024px) / 896), 570px); */
+    inline-size: auto;
+    block-size: clamp(673px, 841px - (168 * (100vw - 1024px) / 896), 841px);
   }
 
   .content-section-reviews__container-item-info {
@@ -103,7 +141,7 @@
   }
 
   .content-section-reviews__container-item-text {
-    font-size: 23px;
+    /* font-size: 23px; */
     line-height: 28px;
   }
 
@@ -126,7 +164,7 @@
   }
 
   .content-section-reviews__container-item {
-    max-inline-size: 570px;
-    max-block-size: 673px;
+    /* max-inline-size: 570px;
+    max-block-size: 673px; */
   }
 }

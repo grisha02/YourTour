@@ -25,6 +25,10 @@
   gap: 5px;
 }
 
+.footer__list-item-social:hover .text-underline::after {
+  width: 101%;
+}
+
 .footer__list-item-text {
   color: #1B1F2B;
   line-height: 23px;

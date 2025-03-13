@@ -11,8 +11,11 @@
 }
 
 .content-section-create-tour__form {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* flex-direction: column; */
+  display: grid;
+  /* justify-content: center; */
   gap: 33px;
   margin: auto;
   border-radius: 30px;
@@ -20,14 +23,14 @@
   padding-block-start: 22px;
   padding-block-end: 40px;
   background-color: #FFFFFF;
-  max-inline-size: 318px;
+  /* max-inline-size: 318px; */
 }
 
 .content-section-create-tour__form-item {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  max-inline-size: 278px;
+  /* max-inline-size: 278px; */
 }
 
 .custom-select-wrapper {
@@ -62,8 +65,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  inline-size: 278px;
+  /* inline-size: 278px; */
   block-size: 43px;
+
+  width: 100%; 
+  max-width: 100%;
 }
 
 .content-section-create-tour__form-item-input:nth-child(1) {
@@ -135,11 +141,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 21px;
+  block-size: 21px;
   border: 2px solid #1B1F2B;
   border-radius: 5px;
   cursor: pointer;
-  inline-size: 13%;
+  inline-size: 21px;
+  flex-shrink: 0;
+  /* margin-block-start: 5px; */
 }
 
 .custom-checkbox-icon svg {
@@ -188,6 +196,70 @@
   text-decoration: none;
 }
 
+@media (width >= 671px) {
+  .content-section-create-tour__form {
+    display: grid;
+    /* place-items: center; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, minmax(278px, 1fr));
+    row-gap: 32px;
+    column-gap: 20px; 
+    border-radius: 50px;
+    /* padding-inline: 60px; */
+    padding-block-start: 59px;
+    padding-block-end: 60px;
+  }
+
+  .content-section-create-tour__form-item-input {
+    /* inline-size: 389px; */
+    width: 100%; 
+    max-width: 100%;
+  }
+
+  .content-section-create-tour__form-item:nth-child(7) {
+    grid-column: span 2;
+  }
+
+  .content-section-create-tour__form-item:nth-child(8) {
+    grid-column: span 2;
+  }
+
+  /* .custom-dropdown {
+    top: 20px;
+    right: 19px;
+  } */
+
+  /* .custom-radio {
+    inline-size: 26px;
+    block-size: 26px;
+  } */
+
+  /* .custom-radio:checked::before {
+    inline-size: 12px;
+    block-size: 12px;
+  } */
+
+  /* .content-section-create-tour__form-item-container-radio-text {
+    font-size: 20px;
+  } */
+
+  /* .custom-checkbox-icon {
+    inline-size: 26px;
+    block-size: 26px;
+  } */
+
+  /* .custom-checkbox-icon svg {
+    inline-size: 13px;
+    block-size: 10px;
+  } */
+}
+
+@media (width >= 768px) {
+  .content-section-create-tour {
+    margin-inline: 53px;
+  }
+}
+
 @media (width >= 1024px) {
   .content-section-create-tour {
     margin-inline: 53px;
@@ -200,15 +272,19 @@
   }
 
   .content-section-create-tour__form {
-    display: grid;
-    grid-template-columns: repeat(2, 389px);
-    row-gap: 32px;
-    column-gap: 20px; 
-    border-radius: 50px;
+    /* display: grid; */
+    /* place-items: stretch; */
+    /* grid-template-columns: repeat(2, 389px); */
+    grid-template-columns: repeat(2, minmax(389px, 1fr));
+    /* row-gap: 32px;
+    column-gap: 20px;  */
+    /* border-radius: 50px;
     padding-inline-start: 60px;
     padding-block-start: 59px;
     padding-block-end: 60px;
-    max-inline-size: 918px;
+    max-inline-size: 918px; */
+    padding-inline: 60px;
+    max-inline-size: 1170px;
   }
 
   .content-section-create-tour__form-item {
@@ -222,7 +298,9 @@
     font-size: 20px;
     line-height: 142%;
     transition: 0.3s ease;
-    inline-size: 389px;
+    /* inline-size: 389px; */
+    width: 100%; /* Вместо фиксированного inline-size */
+    max-width: 100%; /* Чтобы не выходил за границы */
     block-size: 68px;
   }
 
@@ -252,7 +330,7 @@
   .content-section-create-tour__form-item-textarea {
     padding-block-start: 20px;
     min-block-size: 152px;
-    min-inline-size: 798px;
+    /* min-inline-size: 798px; */
   }
 
   .custom-radio {
@@ -296,6 +374,7 @@
   .custom-checkbox-icon {
     inline-size: 26px;
     block-size: 26px;
+    /* margin-block-start: 0px; */
   }
 
   .custom-checkbox-icon svg {
@@ -358,7 +437,7 @@
   }
 
   .content-section-create-tour__form-item-input {
-    inline-size: 500px;
+    /* inline-size: 500px; */
   }
 
   .content-section-create-tour__form-item-text {
@@ -370,6 +449,6 @@
   }
 
   .content-section-create-tour__form-item-textarea {
-    min-inline-size: 1030px;
+    /* min-inline-size: 1030px; */
   }
 }

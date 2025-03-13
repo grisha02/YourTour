@@ -11,7 +11,7 @@
   background: 
     linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), 
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-    url('../images/photo/7755f64b39808bc841957a9607d58659.png');
+    url('../images/photo/first-section-photo.png');
   background-position: center;
   background-size: cover;
   min-block-size: 488px;
@@ -145,7 +145,7 @@
   .header__title {
     font-size: 96px;
     line-height: 109%;
-    max-inline-size: 600px;
+    max-inline-size: 650px;
   }
 
   .header__text {
@@ -186,10 +186,12 @@
   }
   
   .header__title {
-    margin-inline: 576px;
+    /* margin-inline: 576px; */
+    /* max-inline-size: 768px; */
   }
 
   .header__text {
-    margin-inline: 679px;
+    /* margin-inline: 679px; */
+    max-inline-size: 562px;
   }
 }

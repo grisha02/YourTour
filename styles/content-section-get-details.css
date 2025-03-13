@@ -9,13 +9,15 @@
 
 .content-section-get-details__image {
   border-radius: 20px;
-  object-fit: cover;
-  background-image: url('../images/photo/7755f64b39808bc841957a9607d58659.png');
+  /* object-fit: cover; */
+  background-image: url('../images/photo/first-section-photo.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 60% center;
   background-size: cover;
-  inline-size: 130px;
-  block-size: 133px;
+  /* inline-size: 130px;
+  block-size: 133px; */
+  inline-size: clamp(130px, 36vw, 370px);
+  block-size: clamp(133px, 36vw, 370px);
 }
 
 .content-section-get-details__container {
@@ -47,8 +49,8 @@
 
   .content-section-get-details__image {
     border-radius: 50px;
-    inline-size: 370px;
-    block-size: 370px;
+    /* inline-size: 370px;
+    block-size: 370px; */
   }
 
   .content-section-get-details__container {

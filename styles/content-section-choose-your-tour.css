@@ -12,6 +12,7 @@
 .content-section-choose-your-tour__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-inline: 30px;
 }
@@ -30,9 +31,9 @@
   text-underline-offset: 4px;
 }
 
-.content-section-choose-your-tour__item:nth-child(4) {
+/* .content-section-choose-your-tour__item:nth-child(4) {
   margin-inline-start: 40px;
-}
+} */
 
 .content-section-choose-your-tour__pricelist {
   display: flex;
@@ -74,7 +75,7 @@
 
 .content-section-choose-your-tour__pricelist-item {
   position: relative;
-  width: 318px;
+  width: 100%;
   height: 318px;
   border-radius: 20px;
   overflow: hidden;
@@ -112,6 +113,42 @@
   }
 }
 
+@media (width >= 768px) {
+  .content-section-choose-your-tour {
+    margin-inline: 53px;
+  }
+
+  .content-section-choose-your-tour__pricelist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    padding-block-start: 106px;
+    max-inline-size: 1170px;
+    margin-inline: auto;
+  }
+
+  .content-section-choose-your-tour__pricelist-item {
+    /* width: 313px; */
+    flex: 1 1 313px;
+    height: 531px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .content-section-choose-your-tour__pricelist-item-text {
+    position: absolute;
+    top: 50px;
+    /* left: 50px; */
+    gap: 16px;
+  }
+
+  .choose-your-tour__button-with-arrow_position {
+    bottom: 50px;
+    /* left: 50px; */
+  }
+}
+
 @media (width >= 1024px) {
   .content-section-choose-your-tour {
     padding-block-end: 135px;
@@ -144,7 +181,7 @@
     text-underline-offset: 9px;
   }
 
-  .content-section-choose-your-tour__pricelist {
+  /* .content-section-choose-your-tour__pricelist {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,9 +191,27 @@
 
   .content-section-choose-your-tour__pricelist-item {
     width: 450px;
+    flex: 1 1 450px;
     height: 531px;
     border-radius: 50px;
     cursor: pointer;
+  } */
+
+  .content-section-choose-your-tour__pricelist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* padding-block-start: 106px; */
+  }
+
+  .content-section-choose-your-tour__pricelist-item {
+    /* inline-size: clamp(370px, 450px - (80 * (100vw - 1024px) / 896), 450px); */
+    min-width: 370px; /* Минимальная ширина */
+    /* flex: 1 1 auto; */
   }
 
   .content-section-choose-your-tour__pricelist-item:hover .content-section__background-image_features {
@@ -172,6 +227,10 @@
   }
 
   .content-section-choose-your-tour__pricelist-item-text {
+    left: 50px;
+  }
+
+  /* .content-section-choose-your-tour__pricelist-item-text {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -180,6 +239,11 @@
 
   .choose-your-tour__button-with-arrow_position {
     bottom: 50px;
+    left: 50px;
+  } */
+
+  .choose-your-tour__button-with-arrow_position {
+    /* bottom: 50px; */
     left: 50px;
   }
 
@@ -192,19 +256,19 @@
 
 @media (width >= 1920px) {
   .content-section-choose-your-tour {
-    margin-inline: 375px;
+    /* margin-inline: 375px; */
   }
 
   .content-section-choose-your-tour__pricelist {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, auto); */
     gap: 30px;
-    justify-self: center;
+    /* justify-self: center; */
   }
 
   .content-section-choose-your-tour__pricelist-item {
-    width: 370px;
-    height: 531px;
+    /* width: 370px;
+    height: 531px; */
   }
 }
