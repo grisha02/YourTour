@@ -1,4 +1,4 @@
-.content-section__title--h2 {
+.section__title_h2 {
   color: #1B1F2B;
   font-weight: 700;
   font-size: clamp(2.125rem, 1.278rem + 3.765vi, 3.688rem);
@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-.content-section-subtitle {
+.section-subtitle {
   color: #A6A6A6;
   font-weight: 400;
   font-size: 16px;
@@ -15,14 +15,14 @@
   text-align: center;
 }
 
-.content-section__title--h3 {
+.section__title_h3 {
   font-weight: 700;
   font-size: 23px;
   line-height: 120%;
   letter-spacing: 0.04em;
 }
 
-.content-section__background-image_features {
+.section__background-image_features {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,24 +62,24 @@
 }
 
 @media (width >= 1024px) {
-  .content-section-subtitle {
+  .section-subtitle {
     margin-inline: 255px;
     font-size: 20px;
   }
 
-  .content-section__title--h2 {
+  .section__title_h2 {
     line-height: 124%;
     letter-spacing: normal;
   }
 
-  .content-section__title--h3 {
+  .section__title_h3 {
     font-weight: 500;
     font-size: 35px;
     line-height: 122%;
     letter-spacing: normal;
   }
 
-  .content-section__background-image_features {
+  .section__background-image_features {
     transition: transform 300ms ease;
   }
 
@@ -130,7 +130,7 @@
     transition: 0.3s ease;
   }
 
-  .text-underline--thick::after {
+  .text-underline_thick::after {
     bottom: -5px;
     height: 2px;
   }
@@ -139,22 +139,22 @@
     width: 101%;
   }
 
-  .text-underline--color:active {
+  .text-underline_color:active {
     color: #286562;
   }
 }
 
 @media (width >= 1920px) {
-  .content-section__title--h2 {
+  .section__title_h2 {
     margin: auto;
     max-inline-size: 723px;
   }
 
-  .content-section-subtitle {
+  .section-subtitle {
     margin-inline: 710px;
   }
 
-  .content-section__title--h3 {
+  .section__title_h3 {
     margin-inline-end: 75px;
   }
 }

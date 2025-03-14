@@ -1,5 +1,5 @@
 export const initializeForm = () => {
-  const form = document.querySelector(".content-section-create-tour__form");
+  const form = document.querySelector(".create-tour__form");
   const phoneInput = document.querySelector("#phone");
   const dateFromInput = document.querySelector("#date-from");
   const dateToInput = document.querySelector("#date-to");

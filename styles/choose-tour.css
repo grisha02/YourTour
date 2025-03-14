@@ -1,15 +1,15 @@
-.content-section-choose-your-tour {
+.choose-tour {
   margin-inline: 21px;
   padding-block-end: 76px;
 }
 
-.content-section-choose-your-tour__container {
+.choose-tour__container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.content-section-choose-your-tour__list {
+.choose-tour__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,13 +17,13 @@
   margin-inline: 30px;
 }
 
-.content-section-choose-your-tour__item {
+.choose-tour__item {
   color: #1B1F2B;
   font-weight: 700;
   line-height: 142%;
 }
 
-.content-section-choose-your-tour__item:nth-child(1) {
+.choose-tour__item:nth-child(1) {
   justify-self: end;
   color: #EFA501;
   text-decoration: underline;
@@ -31,11 +31,11 @@
   text-underline-offset: 4px;
 }
 
-/* .content-section-choose-your-tour__item:nth-child(4) {
+/* .choose-tour__item:nth-child(4) {
   margin-inline-start: 40px;
 } */
 
-.content-section-choose-your-tour__pricelist {
+.choose-tour__pricelist {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@
   url('../images/photo/ae109f1f6a04de08e8fe0192acfd2a7c.png');
 }
 
-.content-section-choose-your-tour__pricelist-item {
+.choose-tour__pricelist-item {
   position: relative;
   width: 100%;
   height: 318px;
@@ -81,7 +81,7 @@
   overflow: hidden;
 }
 
-.content-section-choose-your-tour__pricelist-item-text {
+.choose-tour__pricelist-item-text {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -91,7 +91,7 @@
   color: #FFFFFF;
 }
 
-.content-section-choose-your-tour__pricelist-item-price {
+.choose-tour__pricelist-item-price {
   line-height: 142%;
   letter-spacing: -0.01em;
 }
@@ -103,22 +103,22 @@
 }
 
 @media (width >= 470px) {
-  .content-section-choose-your-tour__item:nth-child(4) {
+  .choose-tour__item:nth-child(4) {
     margin-inline-start: 0;
   }
 
-  .content-section-choose-your-tour__list {
+  .choose-tour__list {
     justify-content: center;
     gap: 30px;
   }
 }
 
 @media (width >= 768px) {
-  .content-section-choose-your-tour {
+  .choose-tour {
     margin-inline: 53px;
   }
 
-  .content-section-choose-your-tour__pricelist {
+  .choose-tour__pricelist {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* flex-direction: row;
@@ -128,7 +128,7 @@
     margin-inline: auto;
   }
 
-  .content-section-choose-your-tour__pricelist-item {
+  .choose-tour__pricelist-item {
     /* width: 313px; */
     flex: 1 1 313px;
     height: 531px;
@@ -136,7 +136,7 @@
     cursor: pointer;
   }
 
-  .content-section-choose-your-tour__pricelist-item-text {
+  .choose-tour__pricelist-item-text {
     position: absolute;
     top: 50px;
     /* left: 50px; */
@@ -150,38 +150,38 @@
 }
 
 @media (width >= 1024px) {
-  .content-section-choose-your-tour {
+  .choose-tour {
     padding-block-end: 135px;
   }
 
-  .content-section-choose-your-tour__container {
+  .choose-tour__container {
     gap: 35px;
   }
 
-  .content-section-choose-your-tour__item:hover {
+  .choose-tour__item:hover {
     color: #1B1F2B;
     cursor: pointer;
   }
 
-  .content-section-choose-your-tour__item:nth-child(1) {
+  .choose-tour__item:nth-child(1) {
     color: #EFA501;
   }
 
-  .content-section-choose-your-tour__item:active {
+  .choose-tour__item:active {
     cursor: default;
   }
 
-  .content-section-choose-your-tour__item {
+  .choose-tour__item {
     font-size: 23px;
     line-height: 122%;
     transition: 0.3s ease;
   }
 
-  .content-section-choose-your-tour__item:nth-child(1) {
+  .choose-tour__item:nth-child(1) {
     text-underline-offset: 9px;
   }
 
-  /* .content-section-choose-your-tour__pricelist {
+  /* .choose-tour__pricelist {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -189,7 +189,7 @@
     max-inline-size: 1800px;
   }
 
-  .content-section-choose-your-tour__pricelist-item {
+  .choose-tour__pricelist-item {
     width: 450px;
     flex: 1 1 450px;
     height: 531px;
@@ -197,7 +197,7 @@
     cursor: pointer;
   } */
 
-  .content-section-choose-your-tour__pricelist {
+  .choose-tour__pricelist {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -208,29 +208,29 @@
     /* padding-block-start: 106px; */
   }
 
-  .content-section-choose-your-tour__pricelist-item {
+  .choose-tour__pricelist-item {
     /* inline-size: clamp(370px, 450px - (80 * (100vw - 1024px) / 896), 450px); */
     min-width: 370px; /* Минимальная ширина */
     /* flex: 1 1 auto; */
   }
 
-  .content-section-choose-your-tour__pricelist-item:hover .content-section__background-image_features {
+  .choose-tour__pricelist-item:hover .section__background-image_features {
     transform: scale(1.2);
   }
 
-  .content-section-choose-your-tour__pricelist-item:hover .button-with-arrow::before {
+  .choose-tour__pricelist-item:hover .button-with-arrow::before {
     background-color: #286562;
   }
     
-  .content-section-choose-your-tour__pricelist-item:active .button-with-arrow::before {
+  .choose-tour__pricelist-item:active .button-with-arrow::before {
     background-color: #EFA501;
   }
 
-  .content-section-choose-your-tour__pricelist-item-text {
+  .choose-tour__pricelist-item-text {
     left: 50px;
   }
 
-  /* .content-section-choose-your-tour__pricelist-item-text {
+  /* .choose-tour__pricelist-item-text {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -247,7 +247,7 @@
     left: 50px;
   }
 
-  .content-section-choose-your-tour__pricelist-item-price {
+  .choose-tour__pricelist-item-price {
     font-size: 17px;
     line-height: 142%;
     letter-spacing: -0.01em;
@@ -255,11 +255,11 @@
 }
 
 @media (width >= 1920px) {
-  .content-section-choose-your-tour {
+  .choose-tour {
     /* margin-inline: 375px; */
   }
 
-  .content-section-choose-your-tour__pricelist {
+  .choose-tour__pricelist {
     /* display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto); */
@@ -267,7 +267,7 @@
     /* justify-self: center; */
   }
 
-  .content-section-choose-your-tour__pricelist-item {
+  .choose-tour__pricelist-item {
     /* width: 370px;
     height: 531px; */
   }
