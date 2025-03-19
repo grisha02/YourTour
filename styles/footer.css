@@ -25,8 +25,28 @@
   gap: 5px;
 }
 
+.footer__list-item-social-icon {
+  width: 21px;
+  height: 21px;
+  background-size: 26px 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-instagram {
+  background-image: url('../images/icons/inst.png');
+}
+
+.icon-facebook {
+  background-image: url('../images/icons/fb.png');
+}
+
+.icon-vkontakte {
+  background-image: url('../images/icons/vk.png');
+}
+
 .footer__list-item-social:hover .text-underline::after {
-  width: 101%;
+  width: 100%;
 }
 
 .footer__list-item-text {

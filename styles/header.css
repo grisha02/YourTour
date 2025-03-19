@@ -1,4 +1,4 @@
-.header {
+/* .header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -184,14 +184,154 @@
   .header__nav-list {
     gap: 50px;
   }
-  
-  .header__title {
-    /* margin-inline: 576px; */
-    /* max-inline-size: 768px; */
-  }
 
   .header__text {
-    /* margin-inline: 679px; */
     max-inline-size: 562px;
   }
+} */
+
+.header {
+  /* position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('../images/photo/first-section-photo.png');
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  margin-block-end: 75px; */
+  position: absolute; /* Делаем фиксированное меню */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Убеждаемся, что меню поверх */
+  color: #FFF;
+  
 }
+
+.header__menu {
+  /* position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  width: 100%;
+  padding-inline: 20px;
+  padding-block: 32.5px;
+  z-index: 10; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  width: 100%;
+  padding-inline: 20px;
+  padding-block: 20px;
+  padding-block: 32.5px;
+}
+
+.responsive-logo {
+  /* display: block; */
+  background-image: url('../images/icons/YourTour.png');
+  width: 133px;
+  height: 22px;
+  background-size: 133px 22px;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  /* fill: #FFF; */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  color: #1B1F2B;
+  background: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(27px);
+  transition: all 0.3s ease;
+}
+  
+.sticky .responsive-logo {
+  /* fill: #1B1F2B; */
+  background-image: url('../images/icons/YourTour-black.png');
+  width: 133px;
+  height: 22px;
+  background-size: 133px 22px;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav-link {
+  font-size: 16px;
+  line-height: 142%;
+}
+
+.header__number {
+  font-size: 16px;
+}
+
+@media (width < 1024px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__menu {
+    gap: 82.58px;
+    padding-inline: 57px;
+    padding-block-start: 28px;
+    padding-block-end: 24px;
+  }
+
+  .responsive-logo {
+    /* background-image: url('../images/icons/YourTour-1024px.png'); */
+    width: 181.84px;
+    height: 30.24px;
+    background-size: 181.84px 30.24px;
+  }
+
+  .sticky .responsive-logo {
+    /* fill: #1B1F2B; */
+    /* background-image: url('../images/icons/YourTour-black-1024px.png'); */
+    width: 181.84px;
+    height: 30.24px;
+    background-size: 181.84px 30.24px;
+  }
+
+  .responsive-logo:hover {
+    cursor: pointer;
+  }
+
+  .header__number {
+    font-size: 20px;
+  }
+
+  .header__nav-list {
+    gap: 30px;
+  }
+
+  .header__nav-link {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 1920px) {
+  .header__menu {
+    gap: 181px;
+    padding-inline: 376px;
+  }
+
+  .header__nav-list {
+    gap: 50px;
+  }
+}
+
+

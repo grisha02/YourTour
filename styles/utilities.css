@@ -32,7 +32,7 @@
   background-size: cover;
 }
 
-.button-with-arrow {
+/* .button-with-arrow {
   position: relative;
   z-index: 1;
   display: flex;
@@ -42,9 +42,9 @@
   max-width: 123px;
   height: auto;
   color: #FFFFFF;
-}
+} */
 
-.button-details {
+/* .button-details {
   margin-inline-start: -6px;
   border: none;
   font-weight: 700;
@@ -52,14 +52,97 @@
   background: none;
   inline-size: 84px;
   block-size: 23px;
+}  */
+
+.button-details {
+  /* margin-inline-start: -6px; */
+  /* border: none;
+  font-weight: 700;
+  line-height: 142%;
+  background: none;
+  inline-size: 84px;
+  block-size: 23px; */
+} 
+
+/* .button-with-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 123px;
+  block-size: 26px;
+  height: auto;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 142%;
+} */
+
+/* .button-with-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 123px;
+  block-size: 26px;
+  height: auto;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 142%;
+  background-image: url('../images/icons/arrow-bt.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 24px 26px;
+} */
+
+.button-with-arrow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 123px;
+  block-size: 26px;
+  height: auto;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 142%;
+  /* padding-inline-end: 30px; */
 }
 
-.right-arrow {
+/* Текст внутри кнопки */
+/* .button-with-arrow__text {
+  display: inline-block;
+} */
+
+/* Стрелка */
+.button-with-arrow__icon {
+  /* display: inline-block; */
+  width: 24px;
+  height: 26px;
+  background-image: url('../images/icons/arrow-bt.png');
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+}
+
+
+/* .right-arrow {
   display: block;
   width: 24px;
   height: 26px;
   fill: currentColor;
-}
+} */
 
 @media (width >= 1024px) {
   .section-subtitle {
@@ -83,7 +166,7 @@
     transition: transform 300ms ease;
   }
 
-  .button-with-arrow {
+  /* .button-with-arrow {
     width: 100%;
     max-width: 159px;
     height: auto;
@@ -100,9 +183,9 @@
     border-radius: 50px;
     transition: background-color 0.3s ease;
     transform: translate(-50%, -48%);
-  }
+  } */
 
-  .button-details {
+  /* .button-details {
     font-size: 23px;
     line-height: 122%;
     inline-size: 120px;
@@ -111,7 +194,42 @@
 
   .button-details:hover {
     cursor: pointer;
+  }  */
+
+  .button-with-arrow {
+    max-width: 159px;
+    font-size: 23px;
+    line-height: 122%;
+    block-size: 28px;
   }
+
+  .button-with-arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: calc(100% + 40px);
+    height: calc(100% + 14px);
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    transform: translate(-50%, -50%);
+  }
+
+  .button-with-arrow:hover {
+    cursor: pointer;
+  }
+
+  /* .button-details {
+    font-size: 23px;
+    line-height: 122%;
+    inline-size: 120px;
+    block-size: 28px;
+  } */
+
+  /* .button-details:hover {
+    cursor: pointer;
+  }  */
 
   .text-underline {
     position: relative;
@@ -136,7 +254,7 @@
   }
 
   .text-underline:hover::after {
-    width: 101%;
+    width: 100%;
   }
 
   .text-underline_color:active {

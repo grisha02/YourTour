@@ -1,0 +1,119 @@
+.banner {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  z-index: 5;
+  flex: 1;
+  gap: 40px;
+  padding-block-start: 90px; */
+  width: 100%;
+  min-height: 100vh; /* Занимает весь экран */
+  background: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('../images/photo/first-section-photo.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  gap: 40px;
+  padding-block-start: 90px;
+  margin-block-end: 75px;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-block-start: 90px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  max-inline-size: 360px;
+}
+
+.banner__text {
+  margin-inline: 25px;
+  line-height: 23px;
+  max-inline-size: 360px;
+}
+
+.banner__button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #1B1F2B;
+  font-size: 1rem;
+  background: #FFFFFF;
+  inline-size: 114px;
+  block-size: 33px;
+  transition: 0.3s ease;
+}
+
+.banner__button:hover {
+  color: #FFF;
+  background: #EFA501;
+  cursor: pointer;
+}
+
+.banner__button:active {
+  color: #1B1F2B;
+  background: #F8E6BE;
+}
+
+@media (width >= 1024px) {
+  .banner {
+    margin-block-end: 135px;
+    min-block-size: 831px;
+    gap: 50px;
+  }
+
+  .banner__content {
+    gap: 50px;
+    padding-block-start: 208px;
+    padding-block-end: 124px;
+  }
+
+  .banner__title {
+    font-size: 96px;
+    line-height: 109%;
+    max-inline-size: 650px;
+  }
+
+  .banner__text {
+    margin-inline-start: 310px;
+    margin-inline-end: 308px;
+    font-size: 20px;
+    line-height: 28px;
+    max-inline-size: 400px;
+  }
+
+  .banner__button {
+    font-size: 17px;
+    inline-size: 118px;
+    block-size: 34px;
+  }
+}
+
+@media (width >= 1920px) {
+  .banner__text {
+    max-inline-size: 562px;
+  }
+}

@@ -70,7 +70,7 @@
 
 .travel-stories__button-with-arrow_position {
   position: absolute;
-  bottom: 30px;
+  top: 370px;
   left: 30px;
 }
 
@@ -126,7 +126,7 @@
   }
 
   .travel-stories__button-with-arrow_position {
-    bottom: 62px;
+    top: 478px;
     left: 60px;
   }
 

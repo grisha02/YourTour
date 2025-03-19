@@ -96,9 +96,15 @@
   letter-spacing: -0.01em;
 }
 
-.choose-your-tour__button-with-arrow_position {
+/* .choose-your-tour__button-with-arrow_position {
   position: absolute;
   bottom: 25px;
+  left: 25px;
+} */
+
+.choose-your-tour__button-with-arrow_position {
+  position: absolute;
+  top: 241px;
   left: 25px;
 }
 
@@ -143,9 +149,16 @@
     gap: 16px;
   }
 
-  .choose-your-tour__button-with-arrow_position {
+
+  /* left: 50px; */
+  /* .choose-your-tour__button-with-arrow_position {
     bottom: 50px;
-    /* left: 50px; */
+    
+  } */
+
+  .choose-your-tour__button-with-arrow_position {
+    top: 400px;
+    
   }
 }
 
@@ -243,7 +256,7 @@
   } */
 
   .choose-your-tour__button-with-arrow_position {
-    /* bottom: 50px; */
+    top: 454px;
     left: 50px;
   }
 
