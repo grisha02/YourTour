@@ -323,7 +323,7 @@
     padding-block-start: 0px;
     font-size: 20px;
     line-height: 142%;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
     /* inline-size: 389px; */
     width: 100%; /* Вместо фиксированного inline-size */
     max-width: 100%; /* Чтобы не выходил за границы */
@@ -441,7 +441,7 @@
 
   .create-tour__form-button {
     font-size: 20px;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
     min-inline-size: 235px;
     min-block-size: 58px;
   }

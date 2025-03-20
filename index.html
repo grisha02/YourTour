@@ -370,9 +370,9 @@
             кадров
           </p>
         </div>
-        <form class="create-tour__form">
+        <form class="create-tour__form" action="#" method="post">
           <div class="create-tour__form-item">
-            <span id="name-label">Имя</span>
+            <label for="name" id="name-label">Имя</label>
             <input
               class="create-tour__form-item-input"
               type="text"
@@ -407,7 +407,7 @@
             </div>
           </div>
           <div class="create-tour__form-item">
-            <span id="email-label">Email</span>
+            <label for="email" id="email-label">Email</label>
             <input
               class="create-tour__form-item-input"
               type="email"
@@ -419,7 +419,7 @@
             />
           </div>
           <div class="create-tour__form-item">
-            <span id="phone-label">Телефон</span>
+            <label for="phone" id="phone-label">Телефон</label>
             <input
               class="create-tour__form-item-input"
               type="tel"
@@ -432,7 +432,7 @@
             />
           </div>
           <div class="create-tour__form-item">
-            <span id="date-from-label">Дата от</span>
+            <label for="date-from" id="date-from-label">Дата от</label>
             <input
               class="create-tour__form-item-input"
               type="text"
@@ -444,7 +444,7 @@
             />
           </div>
           <div class="create-tour__form-item">
-            <span id="date-to-label">Дата до</span>
+            <label for="date-to" id="date-to-label">Дата до</label>
             <input
               class="create-tour__form-item-input"
               type="text"
@@ -456,12 +456,11 @@
             />
           </div>
           <div class="create-tour__form-item">
-            <span id="comment-label">Комментарий</span>
+            <label for="comment">Комментарий</label>
             <textarea
               class="create-tour__form-item-input create-tour__form-item-textarea"
               id="comment"
               name="comment"
-              aria-labelledby="comment-label"
             ></textarea>
           </div>
           <div class="create-tour__form-item">
@@ -493,7 +492,6 @@
                   name="age"
                   value="no"
                   class="custom-radio"
-                  required
                 />
                 <label
                   for="no"

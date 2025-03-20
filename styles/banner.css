@@ -64,7 +64,7 @@
   background: #FFFFFF;
   inline-size: 114px;
   block-size: 33px;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .banner__button:hover {

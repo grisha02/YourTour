@@ -252,7 +252,7 @@
   color: #1B1F2B;
   background: rgba(243, 239, 232, 0.6);
   backdrop-filter: blur(27px);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
   
 .sticky .responsive-logo {

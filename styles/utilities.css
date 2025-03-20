@@ -105,7 +105,7 @@
 .button-with-arrow {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,6 +117,7 @@
   text-decoration: none;
   font-weight: 700;
   line-height: 142%;
+  /* position: relative; */
   /* padding-inline-end: 30px; */
 }
 
@@ -208,12 +209,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: -1;
+    z-index: 1;
     width: calc(100% + 40px);
     height: calc(100% + 14px);
     border-radius: 50px;
     transition: background-color 0.3s ease;
     transform: translate(-50%, -50%);
+  }
+
+  .button-with-arrow span {
+    position: relative;
+    z-index: 2; /* Выше `::before`, чтобы текст оставался видимым */
   }
 
   .button-with-arrow:hover {
@@ -245,7 +251,7 @@
     width: 0%;
     height: 1px;
     background-color: currentColor;
-    transition: 0.3s ease;
+    transition: width 0.3s ease;
   }
 
   .text-underline_thick::after {
