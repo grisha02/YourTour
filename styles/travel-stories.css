@@ -30,17 +30,17 @@
 
 .img-tent {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), 
-  url('../images/photo/2a7caacf3cdc913a43679b30a43c28bb.png');
+  url('../images/photo/girl-outside-tent.png');
 }
 
 .img-people-around-the-campfire {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), 
-  url('../images/photo/816f9707c2e44b850726a514dbcf5b3c.png');
+  url('../images/photo/campfire-people.png');
 }
 
 .img-people-on-the-beach {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), 
-  url('../images/photo/9c76b8bf65a7730043460a77b332f214.png');
+  url('../images/photo/people-on-the-beach.png');
 }
 
 .travel-stories__list-item-container {
